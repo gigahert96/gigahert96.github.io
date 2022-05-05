@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Zimmermann</title>
+    <script src="https://kit.fontawesome.com/5251b3fe4e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="img/logo24.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><input id="search" type="text" class="input" placeholder="Search product"></li>
+                    <li><div class="selection">
+                        <select id="sizeSelect">
+                            <option value="all">All</option>
+                            <option value="L">Large</option>
+                            <option value="M">Medium</option>
+                            <option value="S">Small</option>
+                        </select>
+                    </div></li>
+                    <li>
+                        <button class="openCart" id="cart-button"><i class="fas fa-shopping-cart"></i><span id="cart-meter">0</span></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="productContainer" class="container">
+        
+    </main>
+
+    <section class="modal-cont">
+        <div class="modal-cart">
+            <h3>Cart</h3>
+            <div id="cart-cont"></div>
+            <p class="productPrice">Precio total: $<spam id="totalPrice">0</spam></p>
+            <div id="finish" style="display: flex; justify-content: flex-end;"></div>
+            <a href="#" class="cartClose">Close</a>
+            <div id="finish" style="display: flex; justify-content: flex-end;"></div>
+        </div>
+    </section>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/stock.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
